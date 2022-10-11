@@ -1,0 +1,6 @@
+Will Weidler
+
+1: The script takes in two parameters, a program and an executable name. It then stores and uses those variables to run the g++ compiliation command with the flag to rename the executable.
+2: No, because the script is not accounting for more than one instance of whitespace, it splits the words "my" and "program.cpp". Because there is no program called "my", the script will not run.
+3: No, single quotes prevent the variable from being expanded! The $@ needs to be used with double quotes so it can use that variable.
+4: Yes, double quotes allow variables to be expanded while saving the whitespace in the original variable. This method will put all the info stored in $@ into the function.
